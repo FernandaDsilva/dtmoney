@@ -41,7 +41,8 @@ routes() {
     this.post('/transactions', (schema, request) => {
       const data = JSON.parse(request.requestBody);
 
-      return schema.create('transactions', data);
+      return schema.create('transaction', data);
+      
     });
   },
 });
